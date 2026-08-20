@@ -5,3 +5,7 @@ coverage
 dist
 *.log
 design.md
+opencode.json
+AGENTS.md
+.codegraph
+/.codegraph
