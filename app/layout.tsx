@@ -20,6 +20,11 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Portfolio de desarrollador junior con enfoque tecnico y directo.",
+  icons: {
+    icon: "/branding/favicon.svg",
+    shortcut: "/branding/favicon.svg",
+    apple: "/branding/app-icon.svg",
+  },
 };
 
 export default function RootLayout({

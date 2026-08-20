@@ -74,7 +74,16 @@ button {
 }
 
 .site-nav__brand {
+  display: inline-flex;
+  align-items: center;
   color: var(--accent);
+}
+
+.site-nav__brand-image {
+  display: block;
+  width: 164px;
+  max-width: 100%;
+  height: auto;
 }
 
 .site-nav__links {
