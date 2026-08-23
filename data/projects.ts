@@ -1,8 +1,9 @@
 export type Project = {
   title: string;
-  url: string;
+  url?: string;
   description: string;
   technologies: string[];
+  status?: string;
 };
 
 export const projects: Project[] = [
@@ -15,9 +16,9 @@ export const projects: Project[] = [
   },
   {
     title: "HoyoTools",
-    url: "https://hoyotools.luislluy.ovh",
     description:
-      "Toolkit para Honkai: Star Rail centrada en planificar roster, banners, tier list y builds con datos persistentes por usuario.",
+      "Toolkit para Honkai: Star Rail centrada en planificar roster, banners, tier list y builds. El proyecto esta detenido temporalmente mientras desarrollo una V2.",
     technologies: ["Next.js", "React", "Tailwind CSS", "Google Auth"],
+    status: "× Detenido temporalmente · V2 en desarrollo",
   },
 ];
