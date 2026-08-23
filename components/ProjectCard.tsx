@@ -8,7 +8,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="project-card">
       <div>
-        <p className="project-card__url">{project.url.replace("https://", "")}</p>
+        {project.url ? (
+          <p className="project-card__url">{project.url.replace("https://", "")}</p>
+        ) : null}
+        {project.status ? <p className="project-card__status">{project.status}</p> : null}
         <h3 className="project-card__title">{project.title}</h3>
         <p className="project-card__copy">{project.description}</p>
       </div>
@@ -19,9 +22,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
         ))}
       </ul>
 
-      <a className="project-card__link" href={project.url} target="_blank" rel="noreferrer">
-        Ver proyecto
-      </a>
+      {project.url ? (
+        <a className="project-card__link" href={project.url} target="_blank" rel="noreferrer">
+          Ver proyecto
+        </a>
+      ) : null}
     </article>
   );
 }
